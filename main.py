@@ -10,17 +10,14 @@ def hello():
 @app.route('/temp',methods=["POST"])
 def temp():
     data = request.get_json()
-    # print("Html template")
     return data
 
 @app.route('/put',methods=["PUT"])
 def putData():
-    # print("Html template")
     return "Put method"
 
 @app.route('/delete',methods=["DELETE"])
 def DeleteData():
-    # print("Html template")
     return "Delete method"
     
 if __name__ == '__main__':
